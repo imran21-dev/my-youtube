@@ -57,3 +57,24 @@ function checkL2() {
          
 }
 
+
+
+
+
+
+function ShowMore() {
+    const subscribtionFeed = document.getElementById("hideList")
+    const showMoreBtn = document.getElementById("showMoreBtn")
+
+          subscribtionFeed.style.display ="block"
+          showMoreBtn.style.display ="none"
+  
+}
+function ShowLess() {
+    const subscribtionFeed = document.getElementById("hideList")
+    const showMoreBtn = document.getElementById("showMoreBtn")
+
+          subscribtionFeed.style.display ="none"
+          showMoreBtn.style.display ="flex"
+   
+}
