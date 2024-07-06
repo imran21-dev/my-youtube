@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
 :root{
     --background-color: #0F0F0F;
-    --primary-color:#ff0000;
+    --primary-color: #ff3eff;
     --secondary-color:#25252595;
     --border-color: #3b3b3be6;
     --font-color: #FFFFFF;
@@ -14,15 +14,30 @@
 ::-webkit-scrollbar{
     width: 5px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: var(--border-color);
-   
-    
-}
 ::-webkit-scrollbar-track{
   background-color: var(--background-color);
     width: 5px;
 }
+#aside:active::-webkit-scrollbar-thumb,
+#aside:focus::-webkit-scrollbar-thumb,
+#aside:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+#aside::-webkit-scrollbar-thumb {
+    background-color: var(--hover-color);
+    visibility: hidden;
+}
+#asideRight:active::-webkit-scrollbar-thumb,
+#asideRight:focus::-webkit-scrollbar-thumb,
+#asideRight:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+#asideRight::-webkit-scrollbar-thumb {
+    background-color: var(--hover-color);
+    visibility: hidden;
+}
+
+
 *{
     box-sizing: border-box;
     transition: none;
@@ -46,9 +61,8 @@ body{
     color: var(--font-color);
     height: 100vh;
 
-  
+     
 }
-
 .user-img{
     width: 30px;
     border-radius: 50%;
@@ -126,8 +140,9 @@ nav{
 }
 .header-logo > li > a > img{
     width: 35px;
-    filter: contrast(2);
+    filter: contrast(2) saturate(5);
 }
+
 .search-con{
     height: 40px;
     width: 600px;
@@ -404,6 +419,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 600;
     
 }
+
 .feed-ul li a{
      width: 100%;
      display: flex;
@@ -441,7 +457,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: var(--border-color);
     position: relative;
 } */
-#you-text, #subscription-text{
+#you-text, #subscription-text, #more-text, #ex-text{
     font-size: 16px;
     font-weight: 500;
    
@@ -454,6 +470,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 #subscription-text-li:hover{
     background-color: var(--background-color);
+   
+}
+#subscription-text:focus{
+    color: var(--font-color);
+
 }
 .channel-img{
     width: 25px;
@@ -466,7 +487,76 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-top: -5px;
 }
 
+#ex-text:hover{
+    background-color: var(--background-color);
+    cursor: auto;
+}
+#ex-text:focus{
+    color: var(--font-color);
+}
+#explore-li:hover{
+    background-color: var(--background-color);
+}
 
 .hidelist{
     display: none;
+}
+
+.trendingIcon{
+    transform: rotate(30deg);
+}
+
+
+#foot-text{
+    font-size: 12px;
+    font-weight: 500;
+    color: #b2b2b2;
+    line-height: 18px;
+    word-spacing: 4px;
+   padding-bottom: 0px;
+}
+#foot-text:hover{
+    background-color: var(--background-color);
+}
+#Copyright-text{
+    font-size: 12px;
+    font-weight: 300;
+    color: #8f8f8f;
+    margin-top: 12px;
+    cursor: auto;
+
+}
+.terms-ul{
+    border-bottom: none;
+    margin-top: -5px;
+   
+}
+
+.venus-pro-img{
+    filter: contrast(2) saturate(5);
+}
+#terms-li1, #terms-li2, #terms-li3:hover{
+  background-color: var(--background-color);
+}
+.venus-span{
+    margin-left: -5px;
+    
+}
+
+#more-text:hover{
+  background-color: var(--background-color);
+  cursor: auto;
+}
+#more-text:focus{
+    color: var(--font-color);
+}
+#more-text-li:hover{
+    background-color: var(--background-color);
+}
+
+#planet,
+#planet2,
+#planet3,
+#planet4{
+    margin-right: -5px;
 }
