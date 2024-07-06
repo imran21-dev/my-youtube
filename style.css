@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+:root{
+    --background-color: #0F0F0F;
+    --primary-color:#F48E28;
+    --secondary-color:#25252595;
+    --border-color: #3b3b3be6;
+    --font-color: #FFFFFF;
+    --primary-font: Roboto;
+    --hover-color: #3a3a3ad5;
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--background-color);
+    width: 50px;
+}
+*{
+    box-sizing: border-box;
+    transition: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    list-style-type: none;
+    color: var(--font-color);
+    transition: .3s ease-in-out;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--background-color);
+    color: var(--font-color);
+    height: 100vh;
+  
+}
+
+.user-img{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+nav{
+    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.header-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.header-logo, 
+.header-searchbar, 
+.headre-userInfo{
+    display: flex;
+}
+.header-logo, .headre-userInfo{
+    width: 15%;
+    
+}
+.header-logo{
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-top: 5px;
+}
+.menu-bar{
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+.menu-bar-a{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bar-a:hover{
+    background-color: var(--hover-color)
+}
+.logo-name{
+    font-family: Fjalla One;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: -10px;
+}
+.logo-name > sup{
+    font-size: 10px;
+    color: #9a9a9a;
+    position: relative;
+    top: -6px;
+}
+.header-logo li i{
+    font-size: 18px;
+}
+.header-logo > li > a > img{
+    width: 35px;
+    filter: contrast(2);
+}
+.search-con{
+    height: 40px;
+    width: 600px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-con > input{
+    width: 90%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-right: 1px solid var(--border-color);
+    text-indent: 15px;
+    font-size: 16px;
+}
+.search-con > a{
+    width: 10%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+   background-color: var(--secondary-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.search-con > a > i{
+    font-size: 18px;
+    font-weight: 200;
+}
+.search-mic-con{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.search-mic{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.search-mic:hover{
+    background-color: var(--hover-color);
+}
+.search-mic > i{
+    font-size: 18px;
+   
+}
+.header-searchbar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.headre-userInfo{
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+.headre-userInfo > li > a > i{
+    font-size: 18px;
+    
+}
+.notiDot{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #de0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    right: 104px;
+    top: 15px;
+    
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("images/cancel\ \(2\).png");
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+    width: 16px;
+    height: 16px;
+    left: -10px;
+}
+#focus-glass{
+  font-size: 15px;
+}
+#focus-hider-a{
+
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    display: none;
+}
+#searchBar:focus{
+
+    border: 1px solid #3A9BFF;
+}
+
+
+
+
+
+
+
+/* headfooter */
+
+
+.list-slide-bg{
+    width: 84%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-foot-ul{
+    
+  
+    display: flex;
+    width: max-content;
+    gap: 11px;
+   justify-content: space-around;
+ 
+   
+
+}
+.header-foot-ul li{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-foot-ul li a{
+    font-size: 14px;
+    font-weight: 500;
+     padding: 7px 12px;
+     border-radius: 7px;
+    background-color: var(--secondary-color);
+}
+.header-foot-ul li a:focus{
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
+
+.head-div-foot{
+    display: flex;
+    justify-content: end;
+   
+    gap: 5px;
+   
+}
+.next-btn{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    z-index: 99;
+}
+.next-btn:hover{
+    background-color: var(--hover-color);
+}
+#all-btn{
+    background-color: var(--font-color);
+    color: var(--background-color);
+
+}
+.lt{
+    display: none;
+}
+.lt2{
+    display: none;
+}
+.rt{
+    display: flex;
+}
+.rt2{
+    display: none;
+}
