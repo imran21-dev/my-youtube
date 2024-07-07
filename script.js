@@ -138,3 +138,21 @@ function checkLessShortsVideo() {
            ShowLButton.style.display = "none"
     
 }
+
+
+function checkShortCon() {
+    const shortCon = document.getElementById("shortCon")
+    const undo = document.querySelector(".undo-short")
+          undo.style.display = "flex"
+         shortCon.style.display ="none"
+           undo.classList.add("this-animation-js")
+   
+}
+function checkBackShort() {
+    const shortCon = document.getElementById("shortCon")
+      const undo = document.querySelector(".undo-short")
+          undo.style.display = "none"
+         shortCon.style.display ="flex"
+         undo.classList.remove("this-animation-js")
+    
+}
