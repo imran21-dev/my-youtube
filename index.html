@@ -14,15 +14,18 @@
        <nav>
         <section class="header-head">
             <ul class="header-logo">
-                <li class="menu-bar"><a class="menu-bar-a" href="#"><i class="fa-thin fa-bars"></i></a></li>
+                <li id="menuOne" class="menu-bar"><a onclick="checkMenu()" class="menu-bar-a" href="#"><i class="fa-thin fa-bars"></i></a></li>
+                <li id="menuTwo" class="menu-bar"><a onclick="checkMenuClose()" class="menu-bar-a" href="#"><i class="fa-thin fa-bars"></i></a></li>
                 <li><a href="index.html"><img src="images/venus-2-01.png" alt=""></a></li>
                 <li><a class="logo-name" href="#">Venus <sup>BD</sup> </a></li>
             </ul>
             <ul class="header-searchbar">
-                <li class="search-con">
-                    <a class="" id="focus-hider-a" href="#"><i id="focus-glass" class="fa-thin fa-magnifying-glass"></i></a>
-                    <input class="" id="searchBar" type="search" placeholder="Search">
-                <a href="#"><i class="fa-thin fa-magnifying-glass"></i></a></li>
+           
+                    <li class="search-con">
+                       
+                        <input class="" id="searchBar" type="search" placeholder="Search">
+                    <a href="#"><i class="fa-thin fa-magnifying-glass"></i></a></li>
+       
 
                 <li class="search-mic-con"><a class="search-mic" href="#"><i class="fa-solid fa-microphone"></i></a></li>
             </ul>
@@ -40,30 +43,30 @@
                 <section id="SlideBar" class="list-slide-bg">
                     <ul id="UL" class="header-foot-ul">
                         <li><a id="all-btn" href="#">All</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Arijit Singh</a></li>
-                        <li><a href="#">Playlists</a></li>
-                        <li><a href="#">Future bass</a></li>
-                        <li><a href="#">Mixes</a></li>
-                        <li><a href="#">Ghost stoties</a></li>
-                        <li><a href="#">Storytelling</a></li>
-                        <li><a href="#">Lo-fi</a></li>
-                        <li><a href="#">Live</a></li>
-                        <li><a href="#">Alan Walker</a></li>
-                        <li><a href="#">Deep House</a></li>
-                        <li><a href="#">Graphic design</a></li>
-                        <li><a href="#">Ghazal</a></li>
-                        <li><a href="#">Dawah</a></li>
-                        <li><a href="#">Musical ensembles</a></li>
-                        <li><a href="#">Comedy</a></li>
-                        <li><a href="#">Recently uploaded</a></li>
-                        <li><a href="#">Watched</a></li>
-                        <li><a href="#">New to you</a></li>
-                        <li><a href="#">Musical ensembles</a></li>
-                        <li><a href="#">Comedy</a></li>
-                        <li><a href="#">Recently uploaded</a></li>
-                        <li><a href="#">Watched</a></li>
-                        <li><a href="#">New to you</a></li>
+                        <li><a onclick="checkBtn()" href="#">Music</a></li>
+                        <li><a onclick="checkBtn()" href="#">Arijit Singh</a></li>
+                        <li><a onclick="checkBtn()" href="#">Playlists</a></li>
+                        <li><a onclick="checkBtn()" href="#">Future bass</a></li>
+                        <li><a onclick="checkBtn()" href="#">Mixes</a></li>
+                        <li><a onclick="checkBtn()" href="#">Ghost stoties</a></li>
+                        <li><a onclick="checkBtn()" href="#">Storytelling</a></li>
+                        <li><a onclick="checkBtn()" href="#">Lo-fi</a></li>
+                        <li><a onclick="checkBtn()" href="#">Live</a></li>
+                        <li><a onclick="checkBtn()" href="#">Alan Walker</a></li>
+                        <li><a onclick="checkBtn()" href="#">Deep House</a></li>
+                        <li><a onclick="checkBtn()" href="#">Graphic design</a></li>
+                        <li><a onclick="checkBtn()" href="#">Ghazal</a></li>
+                        <li><a onclick="checkBtn()" href="#">Dawah</a></li>
+                        <li><a onclick="checkBtn()" href="#">Musical ensembles</a></li>
+                        <li><a onclick="checkBtn()" href="#">Comedy</a></li>
+                        <li><a onclick="checkBtn()" href="#">Recently uploaded</a></li>
+                        <li><a onclick="checkBtn()" href="#">Watched</a></li>
+                        <li><a onclick="checkBtn()" href="#">New to you</a></li>
+                        <li><a onclick="checkBtn()" href="#">Musical ensembles</a></li>
+                        <li><a onclick="checkBtn()" href="#">Comedy</a></li>
+                        <li><a onclick="checkBtn()" href="#">Recently uploaded</a></li>
+                        <li><a onclick="checkBtn()" href="#">Watched</a></li>
+                        <li><a onclick="checkBtn()" href="#">New to you</a></li>
                         
                        </ul>
                 </section>
@@ -85,7 +88,7 @@
                         <a href="#"><i class="fa-thin fa-play homeI"></i>Shorts</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-thin fa-tv homeI"></i>Subscriptions</a>
+                        <a href="#"><i class="fa-thin fa-rectangle-history homeI"></i>Subscriptions</a>
                     </li>
                 </ul>
             </section>
@@ -276,8 +279,559 @@
             </section>
              
         </aside>
-        <aside id="asideRight">
-           
+
+         <aside id="asideMiddle">
+           <a class="aside-mid-a" href="#"><i class="fa-solid fa-house you-mid"></i>Home</a>
+           <a class="aside-mid-a" href="#"><i class="fa-thin fa-play you-mid"></i>Shorts</a>
+           <a class="aside-mid-a" href="#"><i class="fa-thin fa-rectangle-history you-mid"></i>Subscriptions</a>
+           <a class="aside-mid-a" href="#"><i class="fa-thin fa-images-user you-mid"></i>You</a>
+         </aside>
+
+
+        <aside id="asideRight">  
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+              <div class="video-cart">
+                 <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                 <section class="titles">
+                   <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                        <div class="title-name">
+                            <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                           
+                            <a class="video-views channel-name" href="#">
+                                <span class="c-name-span">Soulful Arijit Singh</span>
+                                Soulful Arijit Singh
+                            </a>
+                            <a class="video-views" href="#">4.3M views 1 month ago</a>
+                        </div>
+                        <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                 </section>
+              </div>
+             
+              <section class="shorts-con">
+                <h1 class="shortt-logo"><i id="koko" class="fa-thin fa-play"></i> Shorts</h1>
+                 <section class="shorts-videos">
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <div class="shorts-cart">
+                        <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                        <section class="titles shorts-titles">
+                               <div class="title-name shorts-title-name">
+                                   <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                    </a>
+                                  
+        
+                                   <a class="video-views shorts-views" href="#">4.3M views</a>
+                               </div>
+                               <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                        </section>
+                    </div>
+                    <section id="ShortsVideoHider" class="shorts-video-hider">
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                        <div class="shorts-cart">
+                            <a href="#"><img class="thumbnail" src="images/shorts1.png" alt=""></a>
+                            <section class="titles shorts-titles">
+                                   <div class="title-name shorts-title-name">
+                                       <a class="video-title-text shorts-title-text" href="#">দারুন এই গ্যাজেটে একের ভিতরে পাঁচ অপশন।
+                                        </a>
+                                      
+            
+                                       <a class="video-views shorts-views" href="#">4.3M views</a>
+                                   </div>
+                                   <a class="video-info shorts-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                            </section>
+                        </div>
+                    </section>
+                 </section>
+                 <section class="button">
+                    <button id="ShowMButton" onclick="checkMoreShortsVideo()" class="shoreMoreShorts">Show more <i class="fa-thin fa-angle-down showmorelessIcon"></i></button>
+                 <button id="ShowLButton" onclick="checkLessShortsVideo()" class="shoreLessShorts">Show less <i class="fa-thin fa-angle-up showmorelessIcon"></i></button>
+                 </section>
+              </section>
+
+
+              <div class="video-cart">
+                <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                <section class="titles">
+                  <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                       <div class="title-name">
+                           <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                          
+                           <a class="video-views channel-name" href="#">
+                               <span class="c-name-span">Soulful Arijit Singh</span>
+                               Soulful Arijit Singh
+                           </a>
+                           <a class="video-views" href="#">4.3M views 1 month ago</a>
+                       </div>
+                       <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                </section>
+             </div>
+             <div class="video-cart">
+                <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                <section class="titles">
+                  <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                       <div class="title-name">
+                           <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                          
+                           <a class="video-views channel-name" href="#">
+                               <span class="c-name-span">Soulful Arijit Singh</span>
+                               Soulful Arijit Singh
+                           </a>
+                           <a class="video-views" href="#">4.3M views 1 month ago</a>
+                       </div>
+                       <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                </section>
+             </div>
+             <div class="video-cart">
+                <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                <section class="titles">
+                  <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                       <div class="title-name">
+                           <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                          
+                           <a class="video-views channel-name" href="#">
+                               <span class="c-name-span">Soulful Arijit Singh</span>
+                               Soulful Arijit Singh
+                           </a>
+                           <a class="video-views" href="#">4.3M views 1 month ago</a>
+                       </div>
+                       <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                </section>
+             </div>
+             <div class="video-cart">
+                <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                <section class="titles">
+                  <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                       <div class="title-name">
+                           <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                          
+                           <a class="video-views channel-name" href="#">
+                               <span class="c-name-span">Soulful Arijit Singh</span>
+                               Soulful Arijit Singh
+                           </a>
+                           <a class="video-views" href="#">4.3M views 1 month ago</a>
+                       </div>
+                       <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                </section>
+             </div>
+             <div class="video-cart">
+                <a href="#"><img class="thumbnail" src="images/thumb1.jpg" alt=""></a>
+                <section class="titles">
+                  <a href="#"> <img class="channel-logo" src="images/arijit.jpg" alt=""></a>
+                       <div class="title-name">
+                           <a class="video-title-text" href="#">Ye Tune Kiya (Unreleased version)-English Translation |...</a>
+                          
+                           <a class="video-views channel-name" href="#">
+                               <span class="c-name-span">Soulful Arijit Singh</span>
+                               Soulful Arijit Singh
+                           </a>
+                           <a class="video-views" href="#">4.3M views 1 month ago</a>
+                       </div>
+                       <a class="video-info" href="#"><i class="fa-light fa-ellipsis-vertical"></i></a>
+                </section>
+             </div>
+            
         </aside>
        </main>
        <footer id="footer"></footer>

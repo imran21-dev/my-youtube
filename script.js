@@ -78,3 +78,63 @@ function ShowLess() {
           showMoreBtn.style.display ="flex"
    
 }
+
+
+
+
+function checkMenu() {
+    const Aside = document.getElementById("aside")
+    const AsideMiddle = document.getElementById("asideMiddle")
+    const AsideRight = document.getElementById("asideRight")
+    const MenuOne = document.getElementById("menuOne")
+    const MenuTwo = document.getElementById("menuTwo")
+    const SlideBar = document.getElementById("SlideBar")
+           SlideBar.style.width = "92%"
+          MenuOne.style.display = "none"
+          MenuTwo.style.display = "block"
+          Aside.style.display = "none"
+          AsideMiddle.style.display = "flex"
+          AsideRight.style.width = "96%"
+          AsideRight.style.transition ="0s"
+ 
+}
+function checkMenuClose() {
+    const Aside = document.getElementById("aside")
+    const AsideMiddle = document.getElementById("asideMiddle")
+    const AsideRight = document.getElementById("asideRight")
+    const MenuOne = document.getElementById("menuOne")
+    const MenuTwo = document.getElementById("menuTwo")
+    const SlideBar = document.getElementById("SlideBar")
+          SlideBar.style.width = "84%"
+          MenuOne.style.display = "block"
+          MenuTwo.style.display = "none"
+          Aside.style.display = "flex"
+          AsideMiddle.style.display = "none"
+           AsideRight.style.width = "88%"
+  
+}
+
+function checkBtn() {
+    const AllBtn = document.getElementById("all-btn")
+         AllBtn.removeAttribute('id')
+
+}
+
+function checkMoreShortsVideo() {
+    const HideShorts = document.getElementById("ShortsVideoHider")
+    const ShowMButton = document.getElementById("ShowMButton")
+    const ShowLButton = document.getElementById("ShowLButton")
+           HideShorts.style.display = "flex"
+           ShowMButton.style.display = "none"
+           ShowLButton.style.display = "flex"
+    
+}
+function checkLessShortsVideo() {
+    const HideShorts = document.getElementById("ShortsVideoHider")
+    const ShowMButton = document.getElementById("ShowMButton")
+    const ShowLButton = document.getElementById("ShowLButton")
+           HideShorts.style.display = "none"
+           ShowMButton.style.display = "flex"
+           ShowLButton.style.display = "none"
+    
+}
