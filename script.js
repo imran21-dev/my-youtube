@@ -156,3 +156,150 @@ function checkBackShort() {
          undo.classList.remove("this-animation-js")
     
 }
+
+function checkDescmore() {
+    const Desc = document.getElementById("descHider")
+    const Smore = document.getElementById("descMore")
+    const Sless = document.getElementById("descLess")
+          Smore.style.display = "none"
+          Sless.style.display = "block"
+
+          Desc.style.display = "block"
+}
+function checkDescless() {
+    const Desc = document.getElementById("descHider")
+    const Smore = document.getElementById("descMore")
+    const Sless = document.getElementById("descLess")
+          Smore.style.display = "block"
+          Sless.style.display = "none"
+
+          Desc.style.display = "none"
+}
+
+
+function checkcommentBTN() {
+    const CommentSubmit = document.getElementById("commentAriaa")
+
+       CommentSubmit.style.display = "flex"
+   
+      
+}
+function checkComCL() {
+    const CommentSubmit = document.getElementById("commentAriaa")
+    const Input = document.getElementById("textInput")
+         
+       CommentSubmit.style.display = "none"
+   
+      console.log(Input)
+}
+function checkColorBT() {
+    const coometBT = document.getElementById("coomet-btn")
+           coometBT.removeAttribute('id')
+
+       coometBT.classList.add("commmet-js")
+   
+      
+}
+
+function checkIn2Slide() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Left1 = document.getElementById("Left1")
+        Right1.style.display = "none"
+        Right2.style.display = "flex"
+        Left1.style.display = "flex"
+       SlideDivIn2.style.transform = "translateX(-100px)"
+}
+function checkIn2SlideR1() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Right3 = document.getElementById("Right3")
+    const Left1 = document.getElementById("Left1")
+    const Left2 = document.getElementById("Left2")
+        Right1.style.display = "none"
+        Right2.style.display = "none"
+        Right3.style.display = "flex"
+        Left1.style.display = "none"
+        Left2.style.display = "flex"
+       SlideDivIn2.style.transform = "translateX(-200px)"
+}
+function checkIn2SlideR2() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Right3 = document.getElementById("Right3")
+    const Left1 = document.getElementById("Left1")
+    const Left2 = document.getElementById("Left2")
+    const Left3 = document.getElementById("Left3")
+        Right1.style.display = "none"
+        Right2.style.display = "none"
+        Right3.style.display = "none"
+        Left1.style.display = "none"
+        Left2.style.display = "none"
+        Left3.style.display = "flex"
+       SlideDivIn2.style.transform = "translateX(-300px)"
+}
+function checkIn2SlideL2() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Right3 = document.getElementById("Right3")
+    const Left1 = document.getElementById("Left1")
+    const Left2 = document.getElementById("Left2")
+    const Left3 = document.getElementById("Left3")
+        Right1.style.display = "none"
+        Right2.style.display = "none"
+        Right3.style.display = "flex"
+        Left1.style.display = "none"
+        Left2.style.display = "flex"
+        Left3.style.display = "none"
+       SlideDivIn2.style.transform = "translateX(-200px)"
+}
+function checkIn2SlideL1() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Right3 = document.getElementById("Right3")
+    const Left1 = document.getElementById("Left1")
+    const Left2 = document.getElementById("Left2")
+    const Left3 = document.getElementById("Left3")
+        Right1.style.display = "none"
+        Right2.style.display = "flex"
+        Right3.style.display = "none"
+        Left1.style.display = "flex"
+        Left2.style.display = "none"
+        Left3.style.display = "none"
+       SlideDivIn2.style.transform = "translateX(-100px)"
+}
+function checkIn2SlideL() {
+    const SlideDivIn2 = document.getElementById("InvisibleId")
+    const Right1 = document.getElementById("Right1")
+    const Right2 = document.getElementById("Right2")
+    const Right3 = document.getElementById("Right3")
+    const Left1 = document.getElementById("Left1")
+    const Left2 = document.getElementById("Left2")
+    const Left3 = document.getElementById("Left3")
+        Right1.style.display = "flex"
+        Right2.style.display = "none"
+        Right3.style.display = "none"
+        Left1.style.display = "none"
+        Left2.style.display = "none"
+        Left3.style.display = "none"
+       SlideDivIn2.style.transform = "translateX(0px)"
+}
+
+
+function checkAbn() {
+    window.location.href = "index4.html"
+}
+function checkAbn2() {
+    window.location.href = "index2.html"
+}
+function checkAb3() {
+    window.location.href = "index3.html"
+  
+}
+
+
